@@ -54,6 +54,7 @@ env:
   PROJECT_ID: waifu-18f86 # TODO: update Google Cloud project id
   SERVICE: test-docker # TODO: update Cloud Run service name
   REGION: asia-northeast1 # TODO: update Cloud Run service region
+  FLAGS: --allow-unauthenticated
 
 jobs:
   deploy:
