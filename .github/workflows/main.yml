@@ -49,11 +49,11 @@ jobs:
           region: ${{ env.REGION }}
           project_id: ${{ env.PROJECT_ID }}
           source: ./
-      
-      - name: Set public
-        run: |
-          gcloud run services add-iam-policy-binding ${{ env.SERVICE }} --member="allUsers" --role="roles/run.invoker" --region="${{ env.REGION }}"
 
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
         run: echo ${{ steps.deploy.outputs.url }}
+
+      # - name: Set public
+      #   run: |
+      #     gcloud run services add-iam-policy-binding ${{ env.SERVICE }} --member="allUsers" --role="roles/run.invoker" --region="${{ env.REGION }}"
