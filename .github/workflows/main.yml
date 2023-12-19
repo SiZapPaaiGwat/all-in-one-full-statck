@@ -49,7 +49,6 @@ jobs:
           service: ${{ env.SERVICE }}
           region: ${{ env.REGION }}
           project_id: ${{ env.PROJECT_ID }}
-          image: ${{ env.SERVICE }}
           # NOTE: If required, update to the appropriate source folder
           source: ./
           flags: '${{ env.FLAGS }}'
