@@ -52,7 +52,7 @@ jobs:
       
       - name: Set public
         run: |
-          gcloud run services add-iam-policy-binding ${{ env.SERVICE }} --member="allUsers" --role="roles/run.invoker"
+          gcloud run services add-iam-policy-binding ${{ env.SERVICE }} --member="allUsers" --role="roles/run.invoker" --region="${{ env.REGION }}"
 
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
