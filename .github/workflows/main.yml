@@ -6,7 +6,7 @@ on:
 
 env:
   PROJECT_ID: waifu-18f86
-  SERVICE: my-service-2
+  SERVICE: my-service-3
   REGION: asia-northeast1
   FLAGS: --allow-unauthenticated
 
